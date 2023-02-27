@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin:0;
+            padding: 0;
+
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0b0c;
+        }
+        #container{
+            width: 400px;
+            flex: 1;
+            flex-direction: row;
+
+            margin: 100px auto;
+
+            /* Little trick to remove white outlines in top borders*/
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            
+            background-color: white;
+        }
+        #head{
+            padding: 36px 16px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            background-color: #301f3f;
+        }
+
+        #photo{
+            display: flex;
+            justify-content: center;
+        }
+
+        #photo img{
+            width: 200px;
+            border-radius: 100px;
+        }
+
+        #head h1{
+            margin: 0px;
+            padding: 10px 0 0 0 ;
+
+            text-align: center;
+            font-size:30px;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        
+        #head h2{
+            margin: 0px;
+            padding: 0 0 10px 0 ;
+
+            text-align: center;
+            font-size: 20px;
+            font-weight: normal;
+            color: #4692a7;
+        }
+
+        #stack{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            gap: 6px;
+
+            padding-top: 12px;
+        }
+        
+        #stack span{
+            color: #4692a7;
+            font-size: 12px;
+            line-height: 20px;
+
+            padding: 0 0 0 6p;
+        }
+
+        #stack img{
+            width: 20px;
+            aspect-ratio: 1;
+        }
+
+        #links{
+            padding: 24px 16px;
+        }
+        #links a{
+            display: block;
+            max-width: 300px;
+            margin: 12px auto;
+            padding: 10px;
+
+            border-radius: 6px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            background-color: orange;
+            transition: 0.2s ease-in-out all;
+        }
+        
+        #links a:hover{
+            background-color: white;
+            color: blue;
+
+
+            outline:  1px solid blue;
+            outline-offset: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="head">
+            <div id="photo">
+                <img src="./photo.jpg" alt="fdf">
+            </div>
+    
+            <h1>Luiz Corrêia</h1>
+            <h2>Fullstack Software Engineer</h2>
+
+
+        <div id="stack">
+                <img src="./js.png" alt="JavaScript" title="JavaScript">
+                <img src="./ts.png" alt="Typescript" title="Typescript">
+                <img src="./node.png" alt="NodeJs" title="NodeJs">
+                <img src="./react.png" alt="React/React Native" title="React/React Native">
+                <img src="./ps.png" alt="Postgres" title="Postgres">
+                <img src="./sql.png" alt="SQL" title="Mysql">
+                <img src="./docker.png" alt="Docker" title="Docker">
+                <img src="./github.png" alt="Github" title="Github">
+                <span>and more</span>
+        </div>
+    </div>
+        
+        <div id="links">
+            <a href="https://github.com/luizfscorreia" target="blank" >Github</a>
+            <a href="https://www.youtube.com/channel/UC7NiOgb59GkWKf1P_sW1yBg" target="blank" >Youtube</a>
+            <a href="" target="blank" >Instagram</a>
+            <a href="" target="blank" >Medium</a>
+            <a href="mailto:luizfscorreia@gmail.com">Contato</a>
+        </div>
+    </div>
+</body>
+</html>
